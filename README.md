@@ -9,16 +9,15 @@ Summary: This is a project which solves for upper body muscle activation during 
 # Force
 Read the force and torque data from ROS bag and rotate it to be expressed in motion capture space: 
 1. Open ROT_force.m.
-2. Change the marker locations based on your marker set on the robot end effector.
-3. Initialize the FilePath_read with the location of your ros bag.
+3. Initialize the FilePath_read with the location of force data on the Force folder on google drive.
 4. Initialize FilePath_save with the location where you want to save the .sto files.
-5. Make sure you have the writeSTO funstion in the same folder.
+5. Make sure you have the writeSTO function in the same folder.
 6. run the script.
 
 Write .mot and .xml files for force data for each trial:
 1. Righ click on each .sto file, open Properties and change the ".sto" to ".mot".
 2. Open Force_sim_Iso7.xml with Notepad++.
-3. Change the datafile to match your .mot file.
+3. Change the datafile to match your .mot file and save.
 
 # On OpenSim 4.5
 The MOBL model's folder doese not contain Geometry folder, pull the Geometry from Arm26 model on opensim 4.5 examples.
