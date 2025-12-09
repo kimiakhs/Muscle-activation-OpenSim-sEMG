@@ -1,4 +1,4 @@
-# Muscle-activation-OpenSim-sEMG
+# Muscle activation on OpenSim vs sEMG
 Summary: This is a project which solves for upper body muscle activation during isometric movements and compare it to sEMG of 8 muscles in the arm. The forces are recorded from a BOTA force/torque sensor attached to a handle at the end effector of a KUKA robot.
 
 # Links
