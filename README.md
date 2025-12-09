@@ -20,11 +20,11 @@ Write .mot and .xml files for force data for each trial:
 2. Open Force_sim_Iso7.xml with Notepad++.
 3. Change the datafile to match your .mot file.
 
-# OpenSim 4.5
+# On OpenSim 4.5
 The MOBL model's folder doese not contain Geometry folder, pull the Geometry from Arm26 model on opensim 4.5 examples.
 
 Scale the model:
-1. On OpenSim, load the model.
+1. Open OpenSim, load the model.
 2. Open scaling tool window.
 3. Load scaling setup from scaling folder on google drive.
 4. Change the file path to load A_Iso_01.trc from scaling folder on google drive.
@@ -47,8 +47,9 @@ Run inverse dynamics:
 4. Turn on the 6 Hz filtering.
 5. Save the results in the desired Directory.
 6. Run the inverse dynamics.
+7. Close the model.
 
-# Model modification for static oprimization
+# Model modification for static optimization
 Multiply muscle forces by 2:
 1. Open ModifyModel.m.
 2. Change modelFile to match your scaled model file path.
@@ -60,18 +61,18 @@ Create reserved actuator:
 2. Modify the optimal_force based on your application.
 
 # Static optimization
-1. Load the scaled model.
-2. Lock these coordinates: (rx ry rz tx ty tz).
-3. Open the static optimization tool window.
-4. Load the inverse dynamics results.
-5. On the Actuators & External Loads tab, in External Loads space add the corresponding .xml file.
-6. And in Actuators space add the .xml file corresponding to the reserved actuator.
-7. Save the results in the desired Directory.
-8. Run the static optimization.
-9. Open Plotting tool and plot activations.
+2. Load the scaled model.
+3. Lock these coordinates: (rx ry rz tx ty tz).
+4. Open the static optimization tool window.
+5. Load the inverse dynamics results.
+6. On the Actuators & External Loads tab, in External Loads space add the corresponding .xml file.
+7. And in Actuators space add the .xml file corresponding to the reserved actuator.
+8. Save the results in the desired Directory.
+9. Run the static optimization.
+10. Open Plotting tool and plot activations.
 
 # sEMG
-1. sEMG data is shared on the sEMG folder on google drive.
+1. Get the sEMG data from the sEMG folder on google drive.
 2. Filter and save the data using this repo: (Link)
 3. Open Plotting.m.
 4. Change the file path on readmatrix function.
