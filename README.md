@@ -30,12 +30,14 @@ Scale the model:
 5. Run the scaling.
 6. Save the saled model.
 7. Close the model.
+8. Close OpenSim
 
 Run inverse kinematics:
-1. Load the scaled model.
-2. Open inverse kinematics tool window.
-3. Load inverse kinematics setup from IK folder on google drive.
-4. Change the file path to load the corresponding .trc file from Mocap folder on google drive.
+1. Open OpenSim.
+2. Load the scaled model.
+3. Open inverse kinematics tool window.
+4. Load inverse kinematics setup from IK folder on google drive.
+5. Change the file path to load the corresponding .trc file from Mocap folder on google drive.
 6. Save the results in the desired Motion File path.
 7. Run the inverse kinematics.
 
@@ -47,6 +49,7 @@ Run inverse dynamics:
 5. Save the results in the desired Directory.
 6. Run the inverse dynamics.
 7. Close the model.
+8. Close OpenSim.
 
 # Model modification for static optimization
 Multiply muscle forces by 2:
@@ -60,6 +63,7 @@ Create reserved actuator:
 2. Modify the optimal_force based on your application.
 
 # Static optimization
+1. Open OpenSim.
 2. Load the scaled model.
 3. Lock these coordinates: (rx ry rz tx ty tz).
 4. Open the static optimization tool window.
@@ -72,9 +76,8 @@ Create reserved actuator:
 
 # sEMG
 1. Get the sEMG data from the sEMG folder on google drive.
-2. Filter and save the data using this repo: (Link)
+2. Filter and save the data using this repo: (Link).
 3. Open Plotting.m.
 4. Change the file path on readmatrix function.
 5. Run the script.
-6. Export the image.
 7. Now you can compare your results with the video presentation.
