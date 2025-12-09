@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OpenSimDocument Version="30000">
+	<ForceSet name="WristReserveActuators">
+		<defaults>
+			<CoordinateActuator name="default">
+				<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
+				<min_control>-Inf</min_control>
+				<!--Maximum allowed value for control signal. Used primarily when solving for control values.-->
+				<max_control>Inf</max_control>
+				<!--Name of the generalized coordinate to which the actuator applies.-->
+				<coordinate></coordinate>
+				<!--The maximum generalized force produced by this actuator.-->
+				<optimal_force>100</optimal_force>
+			</CoordinateActuator>
+		</defaults>
+		<objects>
+			<CoordinateActuator name="wrist_flexion_r_reserve">
+				<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
+				<min_control>-Inf</min_control>
+				<!--Maximum allowed value for control signal. Used primarily when solving for control values.-->
+				<max_control>Inf</max_control>
+				<!--Name of the generalized coordinate to which the actuator applies.-->
+				<coordinate>flexion</coordinate>
+				<!--The maximum generalized force produced by this actuator.-->
+				<optimal_force>5</optimal_force>
+			</CoordinateActuator>
+		</objects>
+	</ForceSet>
+</OpenSimDocument>
